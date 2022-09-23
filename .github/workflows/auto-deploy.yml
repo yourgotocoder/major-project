@@ -19,4 +19,4 @@ jobs:
                       git pull
                       npm install
                       npm run build
-                      pm2 restart cse
+                      pm2 restart major-project
