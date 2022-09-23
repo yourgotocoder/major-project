@@ -10,6 +10,6 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-    sendMail({emailTo: 'sudarshan.r@smit.smu.edu.in', emailSubject: "Blank Testing",})
+    sendMail({emailTo: 'sudarshan.r@smit.smu.edu.in', emailSubject: "Blank Testing", emailContent: `<p>Hi from nextjs</p>`})
     res.status(200).json({ message: "Email Sent Successfully" });
 }

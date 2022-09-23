@@ -9,7 +9,7 @@ const sendMail = (config) => {
         from: process.env.EMAIL_ID,
         to: config.emailTo,
         subject: config.emailSubject,
-        html: emailContent,
+        html: config.emailContent,
         onError: (e) => console.log(e),
         onSuccess: (i) => console.log(i),
       });
