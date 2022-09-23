@@ -15,7 +15,7 @@ jobs:
                   username: ${{ secrets.SSH_USERNAME }}
                   password: ${{ secrets.SSH_PASSWORD }}
                   script: |
-                      cd /var/www/html/cse.dalabsmit.in/cse-app
+                      cd /var/www/html/majorproject.dalabsmit.in/major-project
                       git pull
                       npm install
                       npm run build
