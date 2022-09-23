@@ -7,6 +7,7 @@ const sendMail = (config) => {
           pass: process.env.EMAIL_PASSWORD,
         },
         from: process.env.EMAIL_ID,
+        cc: config.cc,
         to: config.emailTo,
         subject: config.emailSubject,
         html: config.emailContent,
